@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+
+import React from 'react';
+import Button from './components/button/button';
 import './App.css';
+import HumanString from './components/humanString/humanString';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+    return(
+        <div className='wrapper'>
+            <div className='header'>
+                <div name="name_school">
+                    СОШ № 21
+                </div>
+                <div name="staff_school">
+                    Люди
+                </div>
+                <div name="role_school">
+                    Диспетчер
+                </div>
+                <Button />
+            </div>
+            <div className='main-content'>
+                <div className='left-box'>
+                        <div name="name_punct">
+                            Учителя
+                        </div>
+                </div>
+                <div className='main-read-content'>
+                    <Button />
+                    <HumanString />
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    )
+  
 }
 
 export default App;
