@@ -27,7 +27,7 @@ function App() {
                     <div name="role_school" className='top_menu_role'>
                         Диспетчер
                     </div>
-                    <Button />
+                    <Button id="2" > Ярик </Button >
                 </div>
             </div>
             <div className='main-content'>
@@ -40,7 +40,7 @@ function App() {
                         </div>
                 </div>
                 <div className='main-read-content'>
-                    <Button />
+                <Button id="1" > Добавить</Button >
                     <HumanString />
                 </div>
             </div>
