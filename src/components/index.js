@@ -7,3 +7,4 @@ export { default as Button} from './button/button';
 export { default as HumanString}from './humanString/humanString';
 export { default as ButtonString} from './button/buttonString';
 export { default as InformationLesson} from './schedules/informationLesson';
+export { default as Classrooms} from './lists/classrooms';
