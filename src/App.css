@@ -103,7 +103,7 @@ body{
     border-radius: 10px;
     /* border: 0; */
     background-color: #FFd800;
-    width: 106px;
+    width: 125px;
     height: 30px;
     
     font-size: 14px;
@@ -189,4 +189,42 @@ body{
 .form-edit-teacher{
     width: 100%;
     margin: 10px;
+}
+
+.form-edit-teacher-zagolovok{
+    padding: 5px 15px;
+    background-color: #d55600ff;
+    height: 20px;
+    border-radius: 10px 10px 0px 0;
+}
+
+.form-edit-teacher-bodu{
+    border: 2px solid #d55600ff;
+
+
+}
+.fields-teacher{
+    padding: 5px;
+}
+.pole-zapolnenia{
+    margin: 5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.inpyt-edit{
+    width: 90%;
+}
+.checkbox-vibor-klassa{
+    /* margin-left: 15px; */
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+.edit-teacher-button{
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: end;
 }
