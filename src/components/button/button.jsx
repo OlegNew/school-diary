@@ -7,7 +7,7 @@ function Button(props){
     return (
     <button 
     onClick={props.onClick}
-    className="button-standart" 
+    className="button-standart button" 
     id={props.id}
     > 
         {props.children} 

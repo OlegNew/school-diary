@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-import {Button, HumanString, ButtonString, InformationLesson, Classrooms} from './components';
+import {Button, HumanString, ButtonString, InformationLesson, Classrooms, TeacherEditForm} from './components';
 
 
 
@@ -45,14 +45,19 @@ function App() {
                 <Button id="1" onClick={clickPoKnopke} > Добавить</Button >
                     <HumanString />
                     <Classrooms classrooms={["5А","5B","5Д","6А","6B","6Д",]}> </Classrooms>
+                    
+
+                    
                     <div className='lesson-schedule'>
+                    <TeacherEditForm>
                         
+                        </TeacherEditForm>
+                        {/* <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
+                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson > */}
                     </div>
                 </div>
             </div>
