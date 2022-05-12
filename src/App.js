@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-import {Button, HumanString, ButtonString, InformationLesson, Classrooms, TeacherEditForm} from './components';
+import {Button, HumanString, ButtonString,  Classrooms, TeacherEditForm, InformationTimetable} from './components';
 
 
 
@@ -54,10 +54,8 @@ function App() {
                         </TeacherEditForm>
                         {/* <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson > */}
+                        <InformationTimetable></InformationTimetable>
                     </div>
                 </div>
             </div>

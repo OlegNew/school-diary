@@ -9,3 +9,4 @@ export { default as ButtonString} from './button/buttonString';
 export { default as InformationLesson} from './schedules/informationLesson';
 export { default as Classrooms} from './lists/classrooms';
 export { default as TeacherEditForm} from './form/teacherEditForm';
+export { default as InformationTimetable} from './schedules/informationTimetable';
