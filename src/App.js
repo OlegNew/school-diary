@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-import {Button, HumanString, ButtonString,  Classrooms, TeacherEditForm, InformationTimetable} from './components';
+import {Button,  ButtonString,  Classrooms,  InformationTimetable, Subject, FormGroups, FormTeacher } from './components';
 
 
 
@@ -42,21 +42,23 @@ function App() {
                         </div>
                 </div>
                 <div className='main-read-content'>
-                <Button id="1" onClick={clickPoKnopke} > Добавить</Button >
-                    <HumanString />
+                
+                    <FormTeacher></FormTeacher>
                     <Classrooms classrooms={["5А","5B","5Д","6А","6B","6Д",]}> </Classrooms>
                     
 
-                    
-                    <div className='lesson-schedule'>
-                    <TeacherEditForm>
                         
-                        </TeacherEditForm>
+                    <div className='lesson-schedule'>
+                        {/* <TeacherEditForm>
+                        
+                        </TeacherEditForm> */}
                         {/* <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
                         <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson > */}
                         <InformationTimetable></InformationTimetable>
                     </div>
+                    <FormGroups></FormGroups>
+                    <Subject predmet="математика" ></Subject>
                 </div>
             </div>
             

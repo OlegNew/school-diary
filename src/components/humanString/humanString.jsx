@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
 
-function HumanString(){
+function HumanString(props){
     return (
         <div className='humanString'>
             <div className='info-person'>

@@ -10,3 +10,6 @@ export { default as InformationLesson} from './schedules/informationLesson';
 export { default as Classrooms} from './lists/classrooms';
 export { default as TeacherEditForm} from './form/teacherEditForm';
 export { default as InformationTimetable} from './schedules/informationTimetable';
+export { default as Subject} from './form/subject';
+export { default as FormGroups} from './form/formGroups';
+export { default as FormTeacher} from './form/formTeacher';
