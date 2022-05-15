@@ -1,9 +1,14 @@
 import React from 'react';
 
 function ButtonString(props){
+
+    function showTeacherContent() {
+        console.log('click')
+    }   
+
     // if(props.elementStringButton === undefined) props.elementStringButton = "чё?";
     return (
-        <button className="button-string"> {props.elementStringButton}</button>
+        <button onClick={showTeacherContent} className="button-string"> {props.elementStringButton}</button>
     )
 }
 

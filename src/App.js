@@ -1,7 +1,15 @@
-
 import React from 'react';
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+    Link
+  } from "react-router-dom";
 import './App.css';
 import {Button,  ButtonString,  Classrooms,  InformationTimetable, Subject, FormGroups, FormTeacher } from './components';
+
+import ContentFirst from './components/content/ContentFirst';
+import ContentSecond from './components/content/ContentSecond';
 
 
 
@@ -10,8 +18,14 @@ function App() {
         alert("fdsgfgsfd");
 
     }
+
+
+    function showTeacherContent() {
+        console.log('click')
+    }
     
     return(
+        <BrowserRouter>
         <div className='wrapper'>
             <div className='header'>
                 <div name="name_school" className='name_school'>
@@ -32,38 +46,25 @@ function App() {
             </div>
             <div className='main-content'>
                 <div className='left-box'>
-                        {/* <div name="name_punct">
-                            Учителя
-                        </div> */}
                         <div className='left_menu_pynkt'>
-                            <ButtonString elementStringButton ="Учителя"> </ButtonString>
-                            <ButtonString elementStringButton ="Люди"> </ButtonString>
-                            <ButtonString elementStringButton ="Объявлениячителя"> </ButtonString>
+                            <Link to="/">Учителя</Link>
+                            <Link to="/students">Ученики</Link>
                         </div>
                 </div>
-                <div className='main-read-content'>
-                
-                    <FormTeacher></FormTeacher>
-                    <Classrooms classrooms={["5А","5B","5Д","6А","6B","6Д",]}> </Classrooms>
-                    
 
-                        
-                    <div className='lesson-schedule'>
-                        {/* <TeacherEditForm>
-                        
-                        </TeacherEditForm> */}
-                        {/* <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson >
-                        <InformationLesson week_day="Среда" date_lession="09.05.22" class_name="11A"></InformationLesson > */}
-                        <InformationTimetable></InformationTimetable>
-                    </div>
-                    <FormGroups></FormGroups>
-                    <Subject predmet="математика" ></Subject>
-                </div>
+
+                {/* Здесь создаются роуты на страницы */}
+                <Routes>
+                    <Route path="/" element={<ContentFirst/>} />
+                    <Route path="/students" element={<ContentSecond/>} />
+                </Routes>
+                 {/* Здесь создаются роуты на страницы */}
+           
+               
             </div>
             
         </div>
-        
+        </BrowserRouter>
         
     )
   
