@@ -80,6 +80,8 @@ body{
     background-color: rgba(28,28,28,0);
     border: 2px solid rgba(28,28,28,0);
     border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
 
 .button-string:hover{
@@ -278,6 +280,7 @@ body{
 
 .bodu-form{
     margin: 10px;
+    width: 90% ;
 }
 
 .zagolovok-form{

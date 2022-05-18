@@ -8,8 +8,8 @@ import {
 import './App.css';
 import {Button,  ButtonString,  Classrooms,  InformationTimetable, Subject, FormGroups, FormTeacher } from './components';
 
-import ContentFirst from './components/content/ContentFirst';
-import ContentSecond from './components/content/ContentSecond';
+import ContentFirst from './components/form/formTeacher';
+import ContentSecond from './components/form/formGroups';
 
 
 
@@ -47,8 +47,8 @@ function App() {
             <div className='main-content'>
                 <div className='left-box'>
                         <div className='left_menu_pynkt'>
-                            <Link to="/">Учителя</Link>
-                            <Link to="/students">Ученики</Link>
+                            <Link className="button-string" to="/">Учителя</Link>
+                            <Link className="button-string" to="/students">Ученики</Link>
                         </div>
                 </div>
 
