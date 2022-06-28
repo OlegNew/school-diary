@@ -3,9 +3,9 @@ import Button from '../button/button';
 
 function StringGroups(props) {
   var tempProps = JSON.parse(JSON.stringify(props));
-  if(tempProps.group === undefined) tempProps.group = "11А";
+  if(tempProps.group === undefined) tempProps.group = "ПО-114";
   if(tempProps.people === undefined) tempProps.people = "22";
-  if(tempProps.kyrator === undefined) tempProps.kyrator = "Трофимов Александр Иванович";
+  if(tempProps.kyrator === undefined) tempProps.kyrator = "Наместников Леонид Николаевич";
 
   return (
     <div className='humanString'>

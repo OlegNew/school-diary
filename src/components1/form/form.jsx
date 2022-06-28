@@ -1,13 +1,13 @@
 import React from 'react'
 
-function formName({props}){
+function form({props}){
   return (
     <div className='bodu-form'>
         <div className='zagolovok-form'>
-          <div>Заголовок</div>
+
         </div>
         <div className='conteiner-form'>
-          <div>Контент</div>
+
         </div>
 
     </div>

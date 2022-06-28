@@ -1,7 +1,8 @@
 import React from 'react'
 import Button from '../button/button';
 function Subject(props){
-  if(props.predmet === undefined)  props.predmet = "математика";
+  var newProps = JSON.parse(JSON.stringify(props));
+  if(newProps.predmet === undefined)  newProps.predmet = "математика";
   return (
     <div className='bodu-form'>
         <div className='zagolovok-form'>
@@ -9,7 +10,7 @@ function Subject(props){
         </div>
         <div className='conteiner-form'>
           <div className='subject'> 
-            <div className='subject-conteiner'>{props.predmet}</div>
+            <div className='subject-conteiner'>{newProps.predmet}</div>
             
             <div>
               <Button >Редактирование </Button>

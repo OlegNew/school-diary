@@ -6,16 +6,16 @@ function HumanString(props){
         <div className='humanString'>
             <div className='info-person'>
                 <div className='name-person'>
-                    Трофимов Александр Иванович
+                    Наместников Леонид Николаевич
                 </div>
                 <div className='position-person'>
-                    Учитель геомметрии, математики
+                    доктор физико-математических наук, профессор
                 </div>
             </div>
             
             <div className='button-box-humanString'>
-                <Button   > Редактировать</Button >
-                <Button   > Удалить</Button >
+                <Button />
+                <Button />
             </div>
         </div>
         

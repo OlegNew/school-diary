@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import {
     BrowserRouter,
@@ -10,14 +13,30 @@ import {Button,  ButtonString,  Classrooms,  InformationTimetable, Subject, Form
 
 import ContentFirst from './components/form/formTeacher';
 import ContentSecond from './components/form/formGroups';
-
+import ContentSchedule from './components/form/formSchedule';
 
 
 function App() {
-    function clickPoKnopke(){
-        alert("fdsgfgsfd");
+    
+    // const mysql = require("mysql");
 
-    }
+    // //конфигурация
+
+    // const conn = mysql.createConnection({
+    // host: 'http://localhost:8080/',
+    // user: 'root',
+    // database: 'rct_school_diary',
+    // pasword: '',
+    // })
+
+    // conn.connect(function (err) {
+    //     if (err) {
+    //         return console.error("Ошибка: " + err.message);
+    //     }
+    //     else {
+    //         console.log("Подключение к серверу MySQL успешно установлено");
+    //     }
+    // });
 
 
     function showTeacherContent() {
@@ -49,14 +68,16 @@ function App() {
                         <div className='left_menu_pynkt'>
                             <Link className="button-string" to="/">Учителя</Link>
                             <Link className="button-string" to="/students">Ученики</Link>
+                            <Link className="button-string" to="/schedule">Расписание</Link>
                         </div>
                 </div>
-
+                
 
                 {/* Здесь создаются роуты на страницы */}
                 <Routes>
                     <Route path="/" element={<ContentFirst/>} />
                     <Route path="/students" element={<ContentSecond/>} />
+                    <Route path="/schedule" element={<ContentSchedule/>} />
                 </Routes>
                  {/* Здесь создаются роуты на страницы */}
            

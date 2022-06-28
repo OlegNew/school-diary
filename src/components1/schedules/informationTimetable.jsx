@@ -5,7 +5,7 @@ function InformationTimetable(props){
     var newProps = JSON.parse(JSON.stringify(props));//чтозв? ну вот "Вы должны создать копию propsиспользования JSON.parse()иJSON.stringify()"
     if(newProps.week_day === undefined) newProps.week_day = "Среда";
     if(newProps.date_lession === undefined) newProps.date_lession = "09.05.22";
-    // if(newProps.class_name === undefined) newProps.class_name = "11A";
+    if(newProps.class_name === undefined) newProps.class_name = "11A";
     return (
         <div className="timetable-table">
             {/* даные урока*/}
@@ -34,44 +34,10 @@ function InformationTimetable(props){
                     {props.kab} 356
                     </div>
                     <div className='timetable-info-klass'>
-                    <div>{newProps.class_name}11А</div>
+                    <div>{newProps.class_name}</div>
                     </div>
 
                 </div>
-
-                <div className='table-timetable-info'>
-                    <div className='timetable-info-time'>
-                    {props.time}09:50
-                    </div>
-                    <div className='timetable-info-table'>
-                        <div className='timetable-name-table'> {props.lesson_subject}Математика</div>
-                       
-                    </div>
-                    <div className='timetable-info-kabinet'>
-                    {props.kab} 356
-                    </div>
-                    <div className='timetable-info-klass'>
-                    <div>{newProps.class_name}11А</div>
-                    </div>
-
-                </div>
-                <div className='table-timetable-info'>
-                    <div className='timetable-info-time'>
-                    {props.time}10:45   
-                    </div>
-                    <div className='timetable-info-table'>
-                        <div className='timetable-name-table'> {props.lesson_subject}Геометрия</div>
-                       
-                    </div>
-                    <div className='timetable-info-kabinet'>
-                    {props.kab} 356
-                    </div>
-                    <div className='timetable-info-klass'>
-                    <div>{newProps.class_name}11А</div>
-                    </div>
-
-                </div>
-                
             </div>
 
         </div>
