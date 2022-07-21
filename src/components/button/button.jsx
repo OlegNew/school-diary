@@ -1,18 +1,23 @@
 import React from 'react';
+import User from '../form/User';
 // import classNames from 'classnames';
 
 
 function Button(props){
-    console.log(this);
+    // console.log(this);
     return (
-    <button 
+    <div>
+           <button 
     onClick={props.onClick}
     className="button-standart button" 
     id={props.id}
     > 
         {props.children} 
 
-    </button>)
+    </button>
+    {/* <User/> */}
+    </div>
+ )
 }
 
 

@@ -4,6 +4,15 @@ import Button from '../button/button';
 import HumanString from '../humanString/humanString';
 
 function FormTeacher(props){
+
+  console.log(props.data)
+
+
+  let mappedUsers = props.data.map(item => {
+    if(item.deleted) return  <HumanString key={item.id} data={item}/>
+    
+  })
+
     return (
       <div className='bodu-form'>
         <div className="zagolovok-form">
@@ -11,8 +20,8 @@ function FormTeacher(props){
         </div>
         <div className='conteiner-form'>
           <Button  > Добавить</Button >
-          {/* <StringGroups></StringGroups> */}
-          <HumanString></HumanString>
+        
+         {mappedUsers}
         </div>
       </div>
     )
