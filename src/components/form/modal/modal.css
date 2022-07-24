@@ -47,3 +47,14 @@
 .modal_content.acitve {
     transform: scale(1);
 }
+.modal__close {
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.modal__close:hover {
+   color: red;
+}

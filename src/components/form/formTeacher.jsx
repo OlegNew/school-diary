@@ -6,7 +6,6 @@ import axios from 'axios';
 import Modal from './modal/modal';
 
 
-
 function FormTeacher(props){
 
   const [formData, setFormData] = React.useState(
@@ -75,6 +74,11 @@ function FormTeacher(props){
   }
 
 
+  const close = () => {
+    setModalActive(prevValue => {
+      return !prevValue;
+    })
+  }
 
     return (
       <div className='bodu-form'>
@@ -89,31 +93,33 @@ function FormTeacher(props){
 
         <Modal active={modalActive} setActive={setModalActive}>
             <div className="modal-wrapper">
-              <div className="modal-item">
-                <label>Имя:</label>
-                <input type="text" 
-                  onChange={handleChange}
-                  name="name"
-                  value={formData.name}/>
-              </div>
+            <span onClick={close} class="modal__close">&times;</span>
 
-              <div className="modal-item">
-                <label>Должность:</label>
-                <input type="text"
-                  onChange={handleChange}
-                  name="role"
-                  value={formData.role} />
-              </div>
+                <div className="modal-item">
+                  <label>Имя:</label>
+                  <input type="text" 
+                    onChange={handleChange}
+                    name="name"
+                    value={formData.name}/>
+                </div>
 
-              <div className="modal-item">
-                <label>Возраст:</label>
-                <input type="age" 
-                  onChange={handleChange}
-                  name="age"
-                  value={formData.age}/>
-              </div>
+                <div className="modal-item">
+                  <label>Должность:</label>
+                  <input type="text"
+                    onChange={handleChange}
+                    name="role"
+                    value={formData.role} />
+                </div>
 
-              <button onClick={addUser} className="button-standart button">Добавить</button>
+                <div className="modal-item">
+                  <label>Возраст:</label>
+                  <input type="age" 
+                    onChange={handleChange}
+                    name="age"
+                    value={formData.age}/>
+                </div>
+
+                <button onClick={addUser} className="button-standart button">Добавить</button>
 
             </div>
        

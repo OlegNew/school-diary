@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
 import User from '../form/formUser';
+import axios from 'axios';
 
 function HumanString(props){
 
@@ -16,8 +17,11 @@ function HumanString(props){
     }
     
     const editUser = () => {
-        console.log('edit')
-     
+        // console.log('edit')
+        axios.put('http://localhost:3001/update', {name: 'dsda', id: 11})
+        .then(response => {
+            console.log('update')
+        })
     }
 
 
