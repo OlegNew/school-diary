@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import {
     BrowserRouter,
@@ -10,6 +7,8 @@ import {
   } from "react-router-dom";
 import './App.css';
 import {Button,  ButtonString,  Classrooms,  InformationTimetable, Subject, FormGroups, FormTeacher } from './components';
+import axios from 'axios';
+import Modal from './components/form/modal/modal';
 
 import ContentFirst from './components/form/formTeacher';
 import ContentSecond from './components/form/formGroups';
@@ -17,9 +16,24 @@ import ContentSchedule from './components/form/formSchedule';
 
 
 
+ 
 function App(props) {
+
+    // const [modalActive, setModalActive] = React.useState(true)
+
+    const addUser = () => {
+        axios.post('http://localhost:3001/create', {
+            name: 'test',
+            age: 25,
+            country: 'Kaz',
+            position: 'lol',
+            wage: 2500
+        }).then(() => {
+            console.log('success')
+        })
+    }
     
-    // console.log(props.data)
+
 
     function showTeacherContent() {
         console.log('click')
@@ -42,7 +56,7 @@ function App(props) {
                     <div name="role_school" className='top_menu_role'>
                         Диспетчер
                     </div>
-                    <Button id="2" > Ярик </Button >
+                    <Button onClick={addUser} id="2" > Ярик </Button >
                 </div>
             </div>
             <div className='main-content'>
@@ -65,6 +79,7 @@ function App(props) {
            
                
             </div>
+            
             
         </div>
         </BrowserRouter>

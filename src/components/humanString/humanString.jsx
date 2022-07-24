@@ -4,7 +4,7 @@ import User from '../form/User';
 
 function HumanString(props){
 
-    console.log(props)
+    // console.log(props)
 
     const [deletedUser, setDeletedUser] = React.useState(props.data.deleted)
 
@@ -25,10 +25,10 @@ function HumanString(props){
 
     return (
         
-        <div className='humanString' style={{display: deletedUser ? "flex" : "none"}}>
+        <div className='humanString'>
             <div className='info-person'>
                 <div className='name-person'>
-                   {props.data.name + ' ' + props.data.lastname}
+                   {props.data.name}
                 </div>
                 <div className='position-person'>
                 {props.data.role}
@@ -37,7 +37,7 @@ function HumanString(props){
                 {props.data.age}
                 </div>
                 <div className='position-photo'>
-                <img src={props.data.age} alt="" />
+                <img src={props.age} alt="" />
                 </div>
             </div>
             
