@@ -14,6 +14,7 @@ import {Button,  ButtonString,  Classrooms,  InformationTimetable, Subject, Form
 import ContentFirst from './components/form/formTeacher';
 import ContentSecond from './components/form/formGroups';
 import ContentSchedule from './components/form/formSchedule';
+import ContentChangeUser from './components/form/formUser';
 
 
 
@@ -48,18 +49,20 @@ function App(props) {
             <div className='main-content'>
                 <div className='left-box'>
                         <div className='left_menu_pynkt'>
-                            <Link className="button-string" to="/">Учителя</Link>
+                            <Link className="button-string" to="/teacher">Учителя</Link>
                             <Link className="button-string" to="/students">Ученики</Link>
                             <Link className="button-string" to="/schedule">Расписание</Link>
+                            <Link className="button-string" to="/changeuser">редактировать</Link>
                         </div>
                 </div>
                 
 
                 {/* Здесь создаются роуты на страницы */}
                 <Routes>
-                    <Route path="/" element={<ContentFirst data={props.data} />} />
+                    <Route path="/teacher" element={<ContentFirst data={props.data} />} />
                     <Route path="/students" element={<ContentSecond data={props.data} />} />
                     <Route path="/schedule" element={<ContentSchedule data={props.data} />} />
+                    <Route path="/changeuser" element={<ContentChangeUser data={props.data} />} />
                 </Routes>
                  {/* Здесь создаются роуты на страницы */}
            

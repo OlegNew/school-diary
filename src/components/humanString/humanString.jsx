@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../button/button';
-import User from '../form/User';
+import User from '../form/formUser';
 
 function HumanString(props){
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import User from '../form/User';
+import User from '../form/formUser';
 // import classNames from 'classnames';
 
 
